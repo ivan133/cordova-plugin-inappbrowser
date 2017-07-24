@@ -39,6 +39,7 @@ public class InAppChromeClient extends WebChromeClient {
 
     public InAppChromeClient(CordovaWebView webView) {
         super();
+        LOG.d(LOG_TAG, "InAppChromeClient 111111");
         this.webView = webView;
     }
     /**
