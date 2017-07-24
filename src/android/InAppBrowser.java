@@ -934,6 +934,8 @@ public class InAppBrowser extends CordovaPlugin {
          */
         public InAppBrowserClient(CordovaWebView webView, EditText mEditText) {
             this.webView = webView;
+            this.webView.getView().setBackgroundResource(0x00000000);
+            LOG.d(LOG_TAG, "set background in InAppBrowserClient");
             this.edittext = mEditText;
         }
 
