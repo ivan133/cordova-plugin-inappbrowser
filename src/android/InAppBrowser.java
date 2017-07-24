@@ -175,12 +175,13 @@ public class InAppBrowser extends CordovaPlugin {
                         }
                         // load in webview
                         if (Boolean.TRUE.equals(shouldAllowNavigation)) {
-                            LOG.d(LOG_TAG, "loading in webview (test)");
+                            LOG.d(LOG_TAG, "loading in webview");
                             //webView.setBackgroundColor(android.graphics.Color.TRANSPARENT);
                             //webView.setBackgroundColor(android.graphics.Color.LTGRAY);
                             //webView.setBackgroundColor(android.graphics.Color.GREEN);
                             //webView.getView().setBackgroundResource(0x00000000);
                             //https://developer.android.com/reference/android/graphics/Color.html
+                            LOG.d(LOG_TAG, "setbackground red 111111");
                             webView.getView().setBackgroundColor(android.graphics.Color.RED);
                             webView.loadUrl(url);
                         }
