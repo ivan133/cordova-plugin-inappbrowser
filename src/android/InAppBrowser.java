@@ -178,8 +178,9 @@ public class InAppBrowser extends CordovaPlugin {
                             LOG.d(LOG_TAG, "loading in webview (test)");
                             //webView.setBackgroundColor(android.graphics.Color.TRANSPARENT);
                             //webView.setBackgroundColor(android.graphics.Color.LTGRAY);
+                            //webView.setBackgroundColor(android.graphics.Color.GREEN);
                             //webView.getView().setBackgroundResource(0x00000000);
-                            webView.setBackgroundColor(Color.parseColor("#919191"));
+                            webView.setBackgroundColor(android.graphics.Color.GREEN);
                             webView.loadUrl(url);
                         }
                         //Load the dialer
