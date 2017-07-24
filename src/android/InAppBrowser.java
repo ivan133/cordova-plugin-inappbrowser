@@ -181,7 +181,7 @@ public class InAppBrowser extends CordovaPlugin {
                             //webView.setBackgroundColor(android.graphics.Color.GREEN);
                             //webView.getView().setBackgroundResource(0x00000000);
                             //https://developer.android.com/reference/android/graphics/Color.html
-                            webView.setBackgroundColor(android.graphics.Color.RED);
+                            webView.getView().setBackgroundColor(android.graphics.Color.RED);
                             webView.loadUrl(url);
                         }
                         //Load the dialer
@@ -618,7 +618,7 @@ public class InAppBrowser extends CordovaPlugin {
                 // Toolbar layout
                 RelativeLayout toolbar = new RelativeLayout(cordova.getActivity());
                 //Please, no more black!
-                LOG.d(LOG_TAG, "2");
+                LOG.d(LOG_TAG, "111111");
                 toolbar.setBackgroundColor(android.graphics.Color.LTGRAY);
                 toolbar.setLayoutParams(new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT, this.dpToPixels(44)));
                 toolbar.setPadding(this.dpToPixels(2), this.dpToPixels(2), this.dpToPixels(2), this.dpToPixels(2));
